@@ -7,8 +7,11 @@ internship project : Basic Banking System
     A web application used to transfer money between users.
  
 this is basic banking website using:
+
 FRONT-END : HTML , CSS , BOOTSTRAP , Javascript 
+
 BACK-END : PHP
+
 Database : MySQL
 
 Flow of the website:
