@@ -10,25 +10,14 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Database: `sparksbank`
+-- Database: `sparksfoundation`
+--
+-- Table structure for table `sparkstransact`
 --
 
--- --------------------------------------------------------
-
---
--- Table structure for table `transaction`
---
-
-CREATE TABLE `transaction` (
-  `sno` int(5) NOT NULL,
+CREATE TABLE `sparkstransact` (
+  
   `sender` text NOT NULL,
   `receiver` text NOT NULL,
   `balance` int(9) NOT NULL,
@@ -38,10 +27,10 @@ CREATE TABLE `transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `sparksusers`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `sparksusers` (
   `id` int(5) NOT NULL,
   `name` text NOT NULL,
   `email` varchar(30) NOT NULL,
@@ -49,22 +38,21 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `sparksusers`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `balance`) VALUES
-(1, 'Philona ', 'philona@gmail.com', 5000),
-(2, 'Nivya', 'nivya@gmail.com', 6000),
-(3, 'Devika', 'devika@gmail.com', 3000),
-(4, 'Neeraja', 'neeraja@gmail.com', 5000),
-(5, 'Sreya', 'sreya@gmail.com', 2000),
-(6, 'Nisha', 'nisha@gmail.com', 6000),
-(7, 'Irene', 'irene@gmail.com', 7000),
-(8, 'Tom', 'tom@gmail.com', 5000),
-(9, 'Jerry', 'jerry@gmail.com', 1000),
-(10, 'Justin', 'justin@gmail.com', 9000);
-COMMIT;
+INSERT INTO `sparksusers` (`id`, `name`, `email`, `balance`) VALUES
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+(110, 'adi','adi@gmail.com', 2700),  
+(111, 'bansi','bani@gmail.com', 3450),  
+(112, 'harsh','harsh@gmail.com', 6550),  
+(113, 'hitesh','hitesh@gmail.com',3000),  
+(114, 'pari', 'parita@gmail.com',4000),  
+(115, 'kinjal','kinju@gmail.com' ,6000),  
+(116, 'rivan', 'rivan7@gmail.com',5500),  
+(117, 'aarav', 'arav55@gmail.com',5800),  
+(118, 'nikita','nikita6@gmail.com',1500),  
+(119, 'raj','rajp@gmail.com',7000),  
+(120, 'jaimin','jaimin45@@gmail.com',6700),  
+(121, 'nitesh','nitesh66@gmail.com',8000),
+COMMIT;
